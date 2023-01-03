@@ -2,10 +2,10 @@ import pickle
 import pandas as pd
 from flask import Flask, request, Response
 from health_insurance import HealthInsurance
+import os
 
 # loading model
-path = '/home/vvilela/repos/health_insurance/models/'
-model = pickle.load(open( path + 'model_linear_regression.pkl', 'rb'))
+model = pickle.load(open( 'models/model_linear_regression.pkl', 'rb'))
 
 # initialize API
 app = Flask(__name__)
@@ -36,4 +36,6 @@ def health_insurance_predict():
         return Response( '{}', status=200, mimetype='application/json' )
 
 if __name__ == '__main__':
-    app.run('0.0.0.0', port=8000, debug=True)
+    port = os.environ.get('PORT', 5000)
+    app.run('0.0.0.0', port=port)
+
