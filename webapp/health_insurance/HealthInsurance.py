@@ -2,15 +2,15 @@ import pickle
 import pandas as pd
 import numpy as np
 
-class HealthInsurance(object):
+class HealthInsurance():
     
     def __init__(self):
-        self.annual_premium_scaler =            pickle.load(open('features/annual_premium_scaler.pkl', 'rb'))
-        self.age_scaler =                       pickle.load(open('features/age_scaler.pkl', 'rb'))
-        self.vintage_scaler =                   pickle.load(open('features/vintage_scaler.pkl', 'rb'))
-        self.target_encode_gender_scaler =      pickle.load(open('features/target_encode_gender_scaler.pkl', 'rb'))
-        self.target_encode_region_code_scaler = pickle.load(open('features/target_encode_region_code_scaler.pkl', 'rb'))
-        self.fe_policy_sales_channel_scaler =   pickle.load(open('features/fe_policy_sales_channel_scaler.pkl', 'rb'))
+        self.annual_premium_scaler =            pickle.load(open('../features/annual_premium_scaler.pkl', 'rb'))
+        self.age_scaler =                       pickle.load(open('../features/age_scaler.pkl', 'rb'))
+        self.vintage_scaler =                   pickle.load(open('../features/vintage_scaler.pkl', 'rb'))
+        self.target_encode_gender_scaler =      pickle.load(open('../features/target_encode_gender_scaler.pkl', 'rb'))
+        self.target_encode_region_code_scaler = pickle.load(open('../features/target_encode_region_code_scaler.pkl', 'rb'))
+        self.fe_policy_sales_channel_scaler =   pickle.load(open('../features/fe_policy_sales_channel_scaler.pkl', 'rb'))
         
     def data_engineering(self, data):
         # vehicle_damage
