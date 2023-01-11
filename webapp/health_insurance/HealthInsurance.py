@@ -5,7 +5,7 @@ import numpy as np
 class HealthInsurance(object):
     
     def __init__(self):
-        self.path= 'features/'
+        self.path= '../features/'
         self.annual_premium_scaler = pickle.load(open(self.path + 'annual_premium_scaler.pkl', 'rb'))
         self.age_scaler = pickle.load(open(self.path + 'age_scaler.pkl', 'rb'))
         self.vintage_scaler = pickle.load(open(self.path + 'vintage_scaler.pkl', 'rb'))
