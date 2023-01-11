@@ -6,7 +6,7 @@ import os
 
 # loading model
 model = pickle.load(open( 'models/model_linear_regression.pkl', 'rb'))
-
+print(model)
 # initialize API
 app = Flask(__name__)
 
