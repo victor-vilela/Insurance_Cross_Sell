@@ -6,58 +6,52 @@
 
 # 1. Business Problem.
 
+- A life insurance company is launching car insurance and wants to use its customer base to identify which customers are most likely to purchase the new product.
+
 # 2. Business Assumptions.
+
+- Create a score that has a higher probability that this customer will buy the new product
 
 # 3. Solution Strategy
 
-My strategy to solve this challenge was:
+My strategy to solve this challenge was inspired by CRISP-DS <!-- medium -->:
 
 **Step 01. Data Description:**
+- Data Dimension
+- Data Types
+- Check Types
+- Check NA
+- Descriptive Statistical
 
 **Step 02. Feature Engineering:**
 
-**Step 03. Data Filtering:**
+**Step 03. Exploratory Data Analysis:**
 
-**Step 04. Exploratory Data Analysis:**
+**Step 04. Data Preparation:**
+- Standardization
+- Rescaling
+- Encoder
 
-**Step 05. Data Preparation:**
+**Step 05. Feature Selection:**
 
-**Step 06. Feature Selection:**
+**Step 06. Machine Learning Modelling:**
+- KNN
 
-**Step 07. Machine Learning Modelling:**
+**Step 07. Deploy Modelo to Production:**
+- Deploy on render
+- Integration with Google Sheets
 
-**Step 08. Hyperparameter Fine Tunning:**
+# 4. Business Results
 
-**Step 09. Convert Model Performance to Business Values:**
+The sales team was able to prioritize calls from the first 50% of customers who were most likely to be interested in the new product, which optimized productivity and the investment was met.
+Demo in YouTube: https://youtu.be/3B78aTF7UmE
 
-**Step 10. Deploy Modelo to Production:**
+# 5. Lessons Learned
 
-# 4. Top 3 Data Insights
+- Cumulative Gains Curve (Learn to Rank)
+- Extra Trees
+- Find features importances
 
-**Hypothesis 01:**
+# 6. Next Steps to Improve
+- Perform statistical inference to find out who the insurer's target audience is for each product
 
-**True/False.**
-
-**Hypothesis 02:**
-
-**True/False.**
-
-**Hypothesis 03:**
-
-**True/False.**
-
-# 5. Machine Learning Model Applied
-
-# 6. Machine Learning Modelo Performance
-
-# 7. Business Results
-
-# 8. Conclusions
-
-# 9. Lessons Learned
-
-# 10. Next Steps to Improve
-
-# LICENSE
-
-# All Rights Reserved - Comunidade DS 2022
